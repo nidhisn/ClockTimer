@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ltMenu"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="120dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:src="@drawable/baseline_access_time_24"
+            android:tint="@color/white"
+            android:layout_marginRight="10dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:src="@drawable/outline_timer_24"
+            android:tint="#0D83E1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:src="@drawable/timer2"
+            android:tint="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/dots"
+            app:tint="#ffffff"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="45dp"
+            android:clickable="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="138dp"
+        android:layout_marginLeft="30dp"
+        android:text="00:27.51"
+        android:textSize="42dp"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/crtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginLeft="30dp"
+        android:text="Current Timing"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/crtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="218dp"
+        android:layout_marginLeft="30dp"
+        android:text="------------------------------------------------------------------"
+        android:textSize="18dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/bg_country_time"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/flag2"
+            android:tint="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="02"
+            android:textSize="18dp"
+            android:id="@+id/ptime1"
+            android:textColor="#ffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="+00:11.27"
+            android:textSize="18dp"
+            android:id="@+id/totaltime1"
+            android:textColor="#ffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="00:15.70"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/tvFormat"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/bg_country_time"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/flag2"
+            android:tint="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="01"
+            android:textSize="18dp"
+            android:id="@+id/ptime2"
+            android:textColor="#ffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="+00:04.43"
+            android:textSize="18dp"
+            android:id="@+id/totaltime2"
+            android:textColor="#ffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="70dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="00:04.43"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/tvFormat2"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:clickable="true"
+        android:src="@drawable/stop1"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        app:shapeAppearanceOverlay="@style/roundedFab"
+        app:tint="@color/black">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/gray"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/play1"
+        app:tint="@color/black"
+        app:shapeAppearanceOverlay="@style/roundedFab"
+        app:layout_constraintVertical_bias="0.795">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

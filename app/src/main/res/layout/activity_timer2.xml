@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/ltMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <ImageView
+            android:id="@+id/imgclock"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/baseline_access_time_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgstp"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/outline_timer_24"
+            android:tint="#ffff" />
+
+        <ImageView
+            android:id="@+id/imgtmr"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/timer2"
+            android:tint="#0D83E1" />
+
+        <ImageView
+            android:id="@+id/imgset"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:src="@drawable/dots"
+            app:tint="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:text="Timer"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="205dp"
+        android:layout_height="68dp"
+        android:text="00:20:05"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/stop1"
+        app:tint="@color/black"
+        android:background="@drawable/fab_shadow"
+        app:shapeAppearanceOverlay="@style/roundedFab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/reset1"
+        app:tint="@color/black"
+        app:maxImageSize="40dp"
+        android:background="@drawable/fab_shadow"
+        app:shapeAppearanceOverlay="@style/roundedFab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="305dp"
+        android:layout_height="267dp"
+        android:progressDrawable="@drawable/progress_bar"
+        android:progressTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

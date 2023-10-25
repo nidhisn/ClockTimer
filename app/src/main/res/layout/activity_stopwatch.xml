@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <!-- Linear Layout for ltMenu -->
+
+    <!-- TextView -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ltMenu"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="90dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgclock"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:src="@drawable/baseline_access_time_24"
+
+            android:tint="#ffffff"
+            android:layout_marginRight="10dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/imgstp"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:src="@drawable/outline_timer_24"
+
+            android:tint="#0D83E1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/imgtmr"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:src="@drawable/timer2"
+            android:tint="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/imgset"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/dots"
+            app:tint="#ffffff"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="45dp"
+            android:clickable="true"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- SeekBar -->
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ltMenu"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="157dp"
+        android:text="00:00.00"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60dp" />
+
+    <!-- Linear Layout for FloatingActionButtons -->
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/textview1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="110dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fpause1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/fab_shadow"
+            android:onClick="onpause"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/pause"
+            app:shapeAppearanceOverlay="@style/roundedFab"
+            app:tint="@color/black" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fplay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onstart"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/fab_shadow"
+            android:layout_toEndOf="@id/fpause1"
+            android:src="@drawable/play1"
+            app:tint="@color/black"
+            app:shapeAppearanceOverlay="@style/roundedFab" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fplay1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/fab_shadow"
+            android:clickable="true"
+            android:src="@drawable/flag2"
+            app:tint="@color/black"
+            app:shapeAppearanceOverlay="@style/roundedFab" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fab_shadow"
+            android:clickable="true"
+            android:src="@drawable/stop1"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            android:onClick="onstop"
+            app:tint="@color/black"
+            app:shapeAppearanceOverlay="@style/roundedFab" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fplay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fab_shadow"
+            android:clickable="true"
+            android:src="@drawable/play1"
+            android:visibility="gone"
+            android:onClick="onresume"
+            app:tint="@color/black"
+            app:shapeAppearanceOverlay="@style/roundedFab"
+            android:layout_alignTop="@id/flag1"
+            android:layout_marginLeft="140dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
