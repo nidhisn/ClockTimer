@@ -5,73 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black"
+    android:background="@color/bgClr"
+    android:padding="16dp"
     tools:context=".TimerActivity">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/ltMenu"
-        android:layout_width="340dp"
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginLeft="90dp"
-        android:gravity="center">
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#DDDCE1"
+            android:layout_marginLeft="150dp"
+            android:text="Timer"
+            android:textSize="20dp" />
 
-        <ImageView
-            android:id="@+id/imgclock"
-            android:layout_width="32dp"
-            android:layout_height="42dp"
-            android:src="@drawable/baseline_access_time_24"
-            android:tint="@color/white"
-            android:layout_marginRight="10dp"
-            android:clickable="true"/>
-
-        <ImageView
-            android:id="@+id/imgstp"
-            android:layout_width="32dp"
-            android:layout_height="42dp"
-            android:src="@drawable/outline_timer_24"
-            android:tint="#ffffff"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:clickable="true"/>
-
-        <ImageView
-            android:id="@+id/imgtmr"
-            android:layout_width="32dp"
-            android:layout_height="42dp"
-            android:src="@drawable/timer2"
-            android:tint="#0D83E1"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:clickable="true"/>
 
         <ImageView
             android:id="@+id/imgset"
             android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:src="@drawable/dots"
-            app:tint="#ffffff"
+            android:layout_height="52dp"
+            android:layout_marginLeft="115dp"
             android:layout_marginRight="30dp"
-            android:layout_marginLeft="45dp"
-            android:clickable="true"/>
+            android:src="@drawable/dots"
+            app:tint="#DDDCE1"
+            android:clickable="true" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="90dp"
-        android:text="Timer"
-        android:textColor="@color/white"
-        android:textSize="32dp"
-        android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:orientation="horizontal">
 
         <NumberPicker
@@ -89,8 +59,8 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="125dp"
             android:text="H"
-            android:textSize="20dp"
             android:textColor="@color/white"
+            android:textSize="20dp"
             android:textStyle="bold" />
 
         <NumberPicker
@@ -151,6 +121,49 @@
         app:layout_constraintVertical_bias="0.795">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <LinearLayout
+        android:id="@+id/ltMenu"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="55dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgclock"
+            android:layout_width="42dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_access_time_24"
+            app:tint="#DDDCE1"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imgstp"
+            android:layout_width="42dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/outline_timer_24"
+            android:tint="#DDDCE1"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imgtmr"
+            android:layout_width="42dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/hourglass"
+            android:tint="@color/offblue"
+            android:clickable="true" />
+
+
+    </LinearLayout>
 
 
 </LinearLayout>
