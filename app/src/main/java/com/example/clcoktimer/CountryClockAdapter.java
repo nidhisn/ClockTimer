@@ -5,6 +5,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -42,6 +43,15 @@ public class CountryClockAdapter extends RecyclerView.Adapter<CountryClockAdapte
         Country country = countryArrayList.get(position);
         holder.tvCountry.setText(country.name);
         holder.tvTime.setText(getCountryTime(country));
+
+        holder.imgDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                countryArrayList.remove(position);
+                notifyDataSetChanged();
+            }
+        });
+
     }
 
     @Override
@@ -55,11 +65,13 @@ public class CountryClockAdapter extends RecyclerView.Adapter<CountryClockAdapte
 
         TextView tvTimeFormat;
 
+        ImageView imgDelete;
         public CountryClockView(@NonNull View itemView) {
             super(itemView);
             tvCountry = (TextView) itemView.findViewById(R.id.tvCountryName);
             tvTime = (TextView) itemView.findViewById(R.id.tvTime);
             tvTimeFormat = (TextView) itemView.findViewById(R.id.tvFormat);
+            imgDelete  = (ImageView) itemView.findViewById(R.id.imgDelete);
         }
 
        

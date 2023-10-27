@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="horizontal"
     android:padding="25dp"
@@ -32,5 +33,13 @@
         android:id="@+id/tvFormat"
         android:visibility="gone"
         android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/baseline_close_24"
+        android:id="@+id/imgDelete"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:tint="#676565" />
 
 </LinearLayout>
