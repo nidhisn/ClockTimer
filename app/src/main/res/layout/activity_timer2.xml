@@ -38,7 +38,9 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="20dp">
 
     <TextView
         android:id="@+id/textView2"
@@ -61,7 +63,8 @@
         android:progressDrawable="@drawable/progress_bar"
         android:progressTint="@color/white"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteY="26dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -113,7 +116,7 @@
         android:gravity="center"
         android:layout_marginTop="155dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="55dp"
+        android:layout_marginLeft="45dp"
         android:orientation="horizontal">
 
         <ImageView
