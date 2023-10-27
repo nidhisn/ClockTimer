@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="90dp"
             android:text="8:31 PM"
             android:textColor="#DDDCE1"
             android:textSize="52dp" />
@@ -96,7 +96,7 @@
         android:gravity="center"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginLeft="55dp"
+        android:layout_marginLeft="45dp"
         android:orientation="horizontal">
 
         <ImageView

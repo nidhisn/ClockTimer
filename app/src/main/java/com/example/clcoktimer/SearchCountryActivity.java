@@ -134,6 +134,63 @@ public class SearchCountryActivity extends AppCompatActivity {
         countryArrayList.add(new Country("Nepal, Kathmandu",9));
         countryArrayList.add(new Country("Netherlands, Amsterdam",-198));
         countryArrayList.add(new Country("New Zealand, Auckland ",438));
+        countryArrayList.add(new Country("Nigeria, Lagos, Lagos", -258));
+        countryArrayList.add(new Country("North Korea, Pyongyang",198));
+        countryArrayList.add(new Country("Norway, Oslo", -198));
+        countryArrayList.add(new Country("Pakistan, Islamabad",-18));
+        countryArrayList.add(new Country("Pakistan, Sindh, Karachi", 18));
+        countryArrayList.add(new Country("Pakistan, Lahore",-18));
+        countryArrayList.add(new Country("Philippines, Manila", 138));
+        countryArrayList.add(new Country("Qatar, Doha", -138));
+        countryArrayList.add(new Country("Russia, Belushya Guba", -138));
+        countryArrayList.add(new Country("Russia, Chelyabinsk", -18));
+        countryArrayList.add(new Country("Saudi Arabia, Makkah", -138));
+        countryArrayList.add(new Country("Saudi Arabia, Medina", -138));
+        countryArrayList.add(new Country("Saudi Arabia, Riyadh",-138));
+        countryArrayList.add(new Country("Singapore, Singapore", 138));
+        countryArrayList.add(new Country("South Africa, Cape Town",-198));
+        countryArrayList.add(new Country("South Africa, Johannesburg",-198));
+        countryArrayList.add(new Country("South Korea, Seoul", 198));
+        countryArrayList.add(new Country("Spain, Madrid, Madrid ", -198));
+        countryArrayList.add(new Country("Sri Lanka, Colombo", 0));
+        countryArrayList.add(new Country("Sweden, Stockholm", -198));
+        countryArrayList.add(new Country("Switzerland, Bern, Bern ", -198));
+        countryArrayList.add(new Country("Switzerland, Geneva, Geneva", -198));
+        countryArrayList.add(new Country("Thailand, Bangkok", 78));
+        countryArrayList.add(new Country("Turkey, Ankara",-138));
+        countryArrayList.add(new Country("Turkey, Istanbul", -138));
+        countryArrayList.add(new Country("Ukraine, Odesa", -138));
+        countryArrayList.add(new Country("Ukraine, Kyiv ", -138));
+        countryArrayList.add(new Country("United Kingdom, England, London",-258));
+        countryArrayList.add(new Country("United Kingdom, Northern Ireland, Belfast",-258));
+        countryArrayList.add(new Country("United Kingdom, Scotland, Edinburgh",-258));
+        countryArrayList.add(new Country("USA, Alabama, Montgomery",-618));
+        countryArrayList.add(new Country("USA, Alaska, Adak",858));
+        countryArrayList.add(new Country("USA, California, Los Angeles ", -738));
+        countryArrayList.add(new Country("USA, California, San Diego",-738));
+        countryArrayList.add(new Country("USA, California, San Francisco",-738));
+        countryArrayList.add(new Country("USA, Florida, Miami",-558));
+        countryArrayList.add(new Country("Zimbabwe, Harare", -198));
+        countryArrayList.add(new Country("Zambia, Lusaka", -198));
+        countryArrayList.add(new Country("Yemen, Sana", -138));
+        countryArrayList.add(new Country("Vietnam, Ho Chi Minh",78));
+        countryArrayList.add(new Country("Vietnam, Hanoi",78));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
